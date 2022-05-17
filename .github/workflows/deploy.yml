@@ -14,9 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Switch to production branch
-      run: |
-          git branch production
-          git switch production
+      run: git switch production
     - name: Install Node.js
       uses: actions/setup-node@v1
     - name: Install npm dependencies
@@ -50,7 +48,6 @@ jobs:
       - name: Switch to gh-pages branch
         run: |
             git fetch --unshallow
-            git branch gh-pages
             git switch gh-pages
       - name: Download artifacts
         uses: actions/download-artifact@v3
