@@ -39,5 +39,18 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Curs3W4ll/corentin-hervaud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Curs3W4ll/corentin-hervaud/issues"
+  },
+  "homepage": "https://github.com/Curs3W4ll/corentin-hervaud#readme"
 }
