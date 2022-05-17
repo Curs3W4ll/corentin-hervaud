@@ -57,5 +57,5 @@ jobs:
       - name: Push on gh-pages
         run: |
             git add .
-            git commit -m "Upload production application on website"
+            git commit -m "Upload production application on website" --allow-empty
             git push origin gh-pages
