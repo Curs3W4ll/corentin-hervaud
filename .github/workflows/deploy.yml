@@ -31,7 +31,7 @@ jobs:
     outputs:
       job_status: ${{ job.status }}
 
-  merge:
+  push-on-pages:
 
     runs-on: ubuntu-latest
 
