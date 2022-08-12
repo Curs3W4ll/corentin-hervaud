@@ -1,0 +1,16 @@
+{
+  "socialLinks": [
+    {
+      "name": "Github",
+      "description": "Go to my Github profile",
+      "link": "https://github.com/Curs3W4ll",
+      "image": "github.png"
+    },
+    {
+      "name": "LinkedIn",
+      "description": "Go to my LinkedIn profile",
+      "link": "https://www.linkedin.com/in/corentin-hervaud",
+      "image": "linkedin.png"
+    }
+  ]
+}

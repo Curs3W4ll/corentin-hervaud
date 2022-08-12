@@ -4,84 +4,14 @@ body {
   margin: 0;
   margin-top: 100px;
 }
+a {
+  text-decoration: none;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-#nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-}
-#navEnd {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin-right: 20px;
-  width: 275px;
-  z-index: 0;
-  border-bottom: 2px solid #88d3c6;
-}
-#nav a {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-}
-#logoContainer {
-  height: 60px;
-  margin: 10px;
-  margin-right: 0;
-  z-index: 2;
-  aspect-ratio: 1/1;
-}
-#logoContainer a {
-  fill: white;
-}
-#logoContainer a.router-link-active {
-  fill: #12c9a8;
-}
-#logoAround {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1/1;
-  background: black;
-  border-radius: 50%;
-}
-#themeSwitcherContainer {
-  position: relative;
-  background: black;
-  left: -10px;
-  height: 40px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-#pages {
-  z-index: 2;
-  margin: 30px;
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-}
-#pages a {
-  margin-right: 30px;
-}
-#pages a.router-link-active {
-  color: #10836f;
-  font-weight: bold;
 }
 .container {
   margin: 20px;
