@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Coming soon !"/>
+  <TheNavigation class="topping" />
+  <TheSocialLinks class="topping" />
+  <div class="container">
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheNavigation from "@/components/TheNavigation.vue";
+import TheSocialLinks from "@/components/TheSocialLinks.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    TheNavigation,
+    TheSocialLinks,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.container {
+  margin: 20px;
+  z-index: 0;
+}
+.topping {
+  z-index: 3;
 }
 </style>
