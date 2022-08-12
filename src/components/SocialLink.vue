@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .linkContainer {
   margin-top: 20px;
 }
@@ -25,7 +25,7 @@ export default {
   transform: scale(1.1);
 }
 .linkLogo {
-  width: 50px;
+  width: 40px;
   aspect-ratio: 1/1;
 }
 </style>
