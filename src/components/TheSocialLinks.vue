@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .linksContainer {
   position: fixed;
   padding: 15px;

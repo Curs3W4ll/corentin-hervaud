@@ -1,6 +1,6 @@
 <template>
-  <TheNavigation />
-  <TheSocialLinks />
+  <TheNavigation class="topping" />
+  <TheSocialLinks class="topping" />
   <div class="container">
     <router-view />
   </div>
@@ -17,3 +17,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.container {
+  margin: 20px;
+  z-index: 0;
+}
+.topping {
+  z-index: 3;
+}
+</style>
