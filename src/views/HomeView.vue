@@ -4,9 +4,9 @@
   </div>
   <div class="mainContainer">
     <p class="mainText">
-      <span class="highViewText">Bonjour</span>, je suis <span class="moreViewText">developpeur</span> etudiant sur Bordeaux.
+      <span class="highViewText">Hello</span>, I'm a student <span class="moreViewText">developper</span> based on Bordeaux, France.
       <br />
-      Bienvenue sur mon <span class="moreViewText">portfolio</span> !
+      Welcome on my <span class="moreViewText">portfolio</span> !
     </p>
     <h1 class="title">Corentin<br/>Hervaud<span class="blinker">_</span></h1>
   </div>
