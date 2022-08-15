@@ -12,5 +12,26 @@
       "link": "https://www.linkedin.com/in/corentin-hervaud",
       "image": "linkedin.png"
     }
+  ],
+  "contacts": [
+    {
+      "name": "Email",
+      "value": "contact@hervaud.fr",
+      "link": "mailto: contact@hervaud.fr"
+    },
+    {
+      "name": "LinkedIn",
+      "value": "Corentin Hervaud",
+      "link": "https://www.linkedin.com/in/corentin-hervaud"
+    },
+    {
+      "name": "GitHub",
+      "value": "Curs3W4ll",
+      "link": "https://github.com/Curs3W4ll"
+    },
+    {
+      "name": "Telephone",
+      "value": "07 71 87 48 44"
+    }
   ]
 }
