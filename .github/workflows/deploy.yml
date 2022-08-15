@@ -15,8 +15,12 @@ jobs:
     - uses: actions/checkout@v3
     - name: Switch to production branch
       run: git switch production
+    - name: Install pdf to png convertor
+      run: pip install pdftopng
     - name: Convert pdf CV to png
-      run: pdftoppm cv.pdf public/cv.png -png
+      run: pdftopng ./cv.pdf ./public/cv.png
+    - name: State
+      run: ls
     - name: Install Node.js
       uses: actions/setup-node@v3
     - name: Install npm dependencies
