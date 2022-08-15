@@ -1,7 +1,5 @@
 <template>
-  <div class="backgroundContainer">
-    <particles-bg color="white" type="cobweb" bg=true />
-  </div>
+  <AnimatedBackground />
   <div class="mainContainer">
     <p class="mainText">
       <span class="highViewText">Hello</span>, I'm a student <span class="moreViewText">developper</span> based on Bordeaux, France.
@@ -13,11 +11,11 @@
 </template>
 
 <script>
-import { ParticlesBg } from "particles-bg-vue";
+import AnimatedBackground from "@/components/AnimatedBackground.vue";
 
 export default {
   components: {
-    ParticlesBg,
+    AnimatedBackground,
   },
 };
 </script>
