@@ -3,7 +3,7 @@
     <div id="logoContainer">
       <span id="logoAround">
         <router-link :to="{ name: 'home' }">
-          <BaseIcon name="home" size=35><HomeIcon /></BaseIcon>
+          <BaseIcon name="home" :size=35><HomeIcon /></BaseIcon>
         </router-link>
       </span>
     </div>
