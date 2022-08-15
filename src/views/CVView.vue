@@ -1,6 +1,6 @@
 <template>
   <div class="CVContainer">
-    <img src="cv.png" alt="CV" />
+    <img class="CVItem" src="cv.png" alt="CV" />
   </div>
 </template>
 
@@ -9,6 +9,7 @@
   display: flex;
   flex: 1;
   justify-content: center;
+  padding: 0 20% 0 20%;
 }
 .CVItem {
   flex: 1;
