@@ -26,4 +26,4 @@ pnpm-debug.log*
 compile_commands.json
 
 # Porject specific
-public/cv.png
+src/assets/cv.png

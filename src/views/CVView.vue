@@ -1,6 +1,6 @@
 <template>
   <div class="CVContainer">
-    <img class="CVItem" src="cv.png" alt="CV" />
+    <img class="CVItem" src="/images/cv.png" alt="CV" />
   </div>
 </template>
 

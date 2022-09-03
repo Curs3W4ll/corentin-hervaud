@@ -16,7 +16,7 @@ jobs:
     - name: Switch to production branch
       run: git switch production
     - name: Convert pdf CV to png
-      run: pdftoppm cv.pdf public/cv.png -png
+      run: pdftoppm cv.pdf public/images/cv.png -png
     - name: Install Node.js
       uses: actions/setup-node@v3
     - name: Install npm dependencies

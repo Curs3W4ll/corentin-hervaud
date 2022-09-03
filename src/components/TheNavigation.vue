@@ -53,11 +53,6 @@ export default {
   z-index: 0;
   border-bottom: 2px solid #88d3c6;
 }
-#nav a {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-}
 #logoContainer {
   height: 60px;
   margin: 10px;
