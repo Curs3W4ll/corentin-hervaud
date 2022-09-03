@@ -30,8 +30,43 @@
       "link": "https://github.com/Curs3W4ll"
     },
     {
-      "name": "Telephone",
+      "name": "Téléphone",
       "value": "07 71 87 48 44"
+    }
+  ],
+  "projects": [
+    {
+      "name": "MatriLED",
+      "description": "MatriLED est une application mobile qui permet de controler un afficheur led directement depuis son téléphone. On peux ainsi y afficher du texte, le faire défiler s'il dépasse la taille de la zone de texte. Il est egalement possible de faire apparaitre des dessins possiblement animes.",
+      "image": "MatriLED.png",
+      "projectLinks": [
+        {
+          "name": "Gitlab",
+          "icon": "Gitlab.png",
+          "link": "https://gitlab.com/curs3_w4ll/matriled"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "description": "Ce projet est tout simplement le site web sur lequel vous naviguer actuellement. Ce site sert de portfolio afin que les personnes voulant se renseigner sur moi puisse me decouvrir. Il donne acces a mon cv, mes adresses pour me contacter ainsi qu'a une presentation de plusieurs de mes projets.",
+      "contentFile": "test.md",
+      "projectLinks": [
+        {
+          "name": "Github",
+          "icon": "Github.png",
+          "link": "https://github.com/Curs3W4ll/corentin-hervaud"
+        }
+      ]
+    },
+    {
+      "name": "Indie Studio",
+      "description": "L'Indie Studio est l'un des projets que j'ai realiser lors de mes annees scolaires. Ce projet est un jeu visant a recreer un bomberman. Par groupe de 6, nous avons realiser un jeu completement fonctionnel representant un bomberman, il est possible de jouer seul contre des intelligences artificielles ou avec ses amis.",
+      "image": "IndieStudio.png"
+    },
+    {
+      "name": "Hub Website",
+      "description": "Ce project est un site web complet visant a administre une structure nommee HUB dans l'ecole ou j'ai fais mes etudes. Cette structure permet de faire decouvrir aux etudiants de nouvelles technologies ou pratiques par le biais de conferences et d'activites pratiques. Ce site permet ainsi d'organiser de d'administrer ces activites tout en suivant la presences des etudiants."
     }
   ]
 }
