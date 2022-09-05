@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="nav" ref="navHeader" :style="`margin-top: ${margin}px`">
     <div id="logoContainer">
       <span id="logoAround">
         <router-link :to="{ name: 'home' }">
@@ -29,6 +29,17 @@ export default {
     BaseIcon,
     HomeIcon,
     ThemeSwitcher,
+  },
+  methods: {
+    getHeight() {
+      return this.$refs.navHeader.offsetHeight;
+    },
+  },
+  props: {
+    margin: {
+      type: Number,
+      required: true,
+    },
   },
 };
 </script>
