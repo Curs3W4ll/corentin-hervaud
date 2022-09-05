@@ -5,9 +5,9 @@
         <input type="checkbox" :disabled="disabled" :id="id + '_switch'" v-model="checkedValue">
         <span class="toggle__switch">
           <div class="toggle__switchContent">
-            <BaseIcon id="leftIcon" name="lightTheme" size=18 viewSize=207.628><SunIcon /></BaseIcon>
+            <BaseIcon id="leftIcon" name="lightTheme" :size=18 :viewSize=207.628><SunIcon /></BaseIcon>
             <span class="toggle__switchButton" />
-            <BaseIcon name="darkTheme" size=18 viewSize=455><MoonIcon /></BaseIcon>
+            <BaseIcon name="darkTheme" :size=18 :viewSize=455><MoonIcon /></BaseIcon>
           </div>
         </span>
       </div>

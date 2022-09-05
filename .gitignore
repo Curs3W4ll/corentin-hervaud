@@ -24,3 +24,6 @@ pnpm-debug.log*
 .cache
 .clangd
 compile_commands.json
+
+# Porject specific
+src/assets/cv.png
