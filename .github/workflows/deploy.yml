@@ -68,11 +68,17 @@ jobs:
             git commit -m "Upload production application on website" --allow-empty
             git push origin gh-pages
       - name: Test
+        uses: boro2g/http-request-action@v1.0.2
+        with:
+          url: 'https://api.github.com/repos/Curs3W4ll/corentin-hervaud/pages/deployment'
+          method: 'POST'
+          customHeaders: '{"Accept": "application/vnd.github+json", "Authorization": "Bearer <YOUR-TOKEN>"}'
+          data: '{"cname": "www.hervaud.fr", "https_enforced": "true", "source": {"branch":"gh-pages","path":"/"}}'
+      - name: Test
         uses: octokit/request-action@v2.x
         with:
+
           route: PUT /repos/Curs3W4ll/corentin-hervaud/pages/builds
-          owner: Curs3W4ll
-          repo: corentin-hervaud
           cname: www.hervaud.fr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
