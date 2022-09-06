@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkportfolio"]=self["webpackChunkportfolio"]||[]).push([[773],{2852:function(r,t,e){e.r(t),e.d(t,{default:function(){return c}});var n=e(3396),o=e(7139);function u(r,t){return(0,n.wg)(),(0,n.iD)("h1",null,"Project details for "+(0,o.zw)(r.$route.params.id),1)}var a=e(89);const f={},i=(0,a.Z)(f,[["render",u]]);var c=i}}]);
-//# sourceMappingURL=projectDetails.cdc2e9d1.js.map
