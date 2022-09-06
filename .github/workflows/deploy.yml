@@ -19,7 +19,6 @@ jobs:
     - name: Switch to my branch
       run: git switch 27_Automatically-setting-up-github-pages-custom-domain
     - name: Install pdf converter
-      # run: sudo apt-get update && sudo apt-get install -y pdftoppm
       run: sudo apt-get install -y poppler-utils
     - name: Convert pdf CV to png
       run: pdftoppm cv.pdf public/images/cv.png -png
@@ -72,7 +71,7 @@ jobs:
         uses: octokit/request-action@v2.x
         id: test
         with:
-          route: GET repos/Curs3W4ll/corentin-hervaud/pages/builds
+          route: GET /repos/Curs3W4ll/corentin-hervaud/pages/builds
           owner: Curs3W4ll
           repo: corentin-hervaud
           name: "Test"
