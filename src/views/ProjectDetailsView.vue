@@ -34,6 +34,7 @@ export default {
 
 <style scoped>
 .projectDetailsMainContainer {
+  padding-bottom: 3%;
   display: flex;
   flex-direction: column;
   width: 50%;

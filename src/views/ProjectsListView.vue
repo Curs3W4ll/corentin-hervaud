@@ -53,6 +53,8 @@ export default {
 
 <style scoped>
 #mainProjectsListContainer {
+  padding-top: 3%;
+  padding-bottom: 3%;
   display: flex;
   flex: 1;
   flex-direction: column;
