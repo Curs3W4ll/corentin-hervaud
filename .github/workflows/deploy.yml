@@ -73,7 +73,8 @@ jobs:
           url: 'https://api.github.com/repos/Curs3W4ll/corentin-hervaud/pages'
           method: 'PUT'
           customHeaders: '{"Accept": "application/vnd.github+json", "Authorization": "Bearer ${{ secrets.GITHUB_TOKEN }}"}'
-          data: '{"cname": "www.hervaud.fr", "https_enforced": true, "source": {"branch":"gh-pages","path":"/"}}'
+          data: '{"cname": "www.hervaud.fr", "source": {"branch":"gh-pages","path":"/"}}'
+          # data: '{"cname": "www.hervaud.fr", "https_enforced": true, "source": {"branch":"gh-pages","path":"/"}}'
       - name: Test
         uses: octokit/request-action@v2.x
         with:
