@@ -2,7 +2,7 @@
   <div class="warningContainer" ref="warningHeader">
     <BaseIcon class="warningIcon" id="warningIcon" name="Warning" :size=40><WarningIcon /></BaseIcon>
     <p class="warningText">
-      This website is currently in development, it may cause some unexcpected behaviors
+      This website is currently in development, it may cause some unexpected behaviors
     </p>
   </div>
 </template>

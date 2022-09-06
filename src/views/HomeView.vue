@@ -4,9 +4,9 @@
     <p class="mainText">
       <span class="highViewText">Hello</span>, I'm a student <span class="moreViewText">developper</span> based on Bordeaux, France.
       <br />
-      Welcome on my <span class="moreViewText">portfolio</span> !
+      Welcome to my <span class="moreViewText">portfolio</span> !
     </p>
-    <h1 class="title">Corentin<br/>Hervaud<span class="blinker">_</span></h1>
+    <p class="title">Corentin<br/>Hervaud<span class="blinker">_</span></p>
   </div>
 </template>
 
@@ -22,20 +22,30 @@ export default {
 
 <style scoped>
 .mainContainer {
-  position: relative;
-  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
 }
 .mainText {
-  margin-left: 15%;
-  margin-top: 250px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10%;
+  padding-left: 10%;
   font-size: 30px;
   color: black;
+  flex: 1;
 }
 .title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6%;
   font-weight: bold;
   font-size: 150px;
-  float: right;
-  margin-right: 15%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .blinker {
   animation: blink 0.5s alternate infinite;
@@ -47,16 +57,5 @@ export default {
   to {
     opacity: 0;
   }
-}
-.backgroundContainer {
-  position: absolute;
-  opacity: 0.2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
 }
 </style>

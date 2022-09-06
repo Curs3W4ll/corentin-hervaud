@@ -53,6 +53,7 @@ export default {
   margin-top: 0;
   display: flex;
   align-items: center;
+  background: rgba(238, 238, 238, 0.9);
 }
 #navEnd {
   position: absolute;
