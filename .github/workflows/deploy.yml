@@ -69,13 +69,10 @@ jobs:
             git push origin gh-pages
       - name: Test
         uses: octokit/request-action@v2.x
-        id: test
         with:
-          route: GET /repos/Curs3W4ll/corentin-hervaud/pages/builds
+          route: PUT /repos/Curs3W4ll/corentin-hervaud/pages/builds
           owner: Curs3W4ll
           repo: corentin-hervaud
-          name: "Test"
+          cname: www.hervaud.fr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Display output
-        run: "echo Release found: ${{ steps.test.outputs.data }}"
