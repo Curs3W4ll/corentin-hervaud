@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="nav" ref="navHeader" :style="`margin-top: ${margin}px`">
     <div id="logoContainer">
       <span id="logoAround">
         <router-link :to="{ name: 'home' }">
@@ -30,6 +30,17 @@ export default {
     HomeIcon,
     ThemeSwitcher,
   },
+  methods: {
+    getHeight() {
+      return this.$refs.navHeader.offsetHeight;
+    },
+  },
+  props: {
+    margin: {
+      type: Number,
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -42,6 +53,7 @@ export default {
   margin-top: 0;
   display: flex;
   align-items: center;
+  background: rgba(238, 238, 238, 0.9);
 }
 #navEnd {
   position: absolute;
@@ -52,11 +64,6 @@ export default {
   width: 275px;
   z-index: 0;
   border-bottom: 2px solid #88d3c6;
-}
-#nav a {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
 }
 #logoContainer {
   height: 60px;

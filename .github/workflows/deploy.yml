@@ -15,12 +15,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: Switch to production branch
       run: git switch production
-    - name: Install pdf to png convertor
-      run: pip install pdftopng
+    - name: Install pdf converter
+      run: sudo apt-get install -y poppler-utils
     - name: Convert pdf CV to png
-      run: pdftopng ./cv.pdf ./public/cv.png
-    - name: State
-      run: ls
+      run: pdftoppm cv.pdf public/images/cv.png -png
     - name: Install Node.js
       uses: actions/setup-node@v3
     - name: Install npm dependencies
@@ -66,3 +64,10 @@ jobs:
             git add .
             git commit -m "Upload production application on website" --allow-empty
             git push origin gh-pages
+      - name: Test
+        uses: boro2g/http-request-action@v1.0.2
+        with:
+          url: 'https://api.github.com/repos/Curs3W4ll/corentin-hervaud/pages'
+          method: 'PUT'
+          customHeaders: '{"Accept": "application/vnd.github+json", "Authorization": "Bearer ${{ secrets.GITHUB_TOKEN }}"}'
+          data: '{"cname": "www.hervaud.fr", "source": {"branch":"gh-pages","path":"/"}}'

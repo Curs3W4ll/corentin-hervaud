@@ -1,7 +1,7 @@
 <template>
   <div class="linkContainer">
     <a :href="link.link" target="_blank" rel="noopener noreferrer">
-      <img class="linkLogo" :src="link.image" :alt="link.name" :title="link.description" />
+      <img class="linkLogo" :src="`/images/${link.image}`" :alt="link.name" :title="link.description" />
     </a>
   </div>
 </template>

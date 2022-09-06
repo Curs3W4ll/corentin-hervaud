@@ -59,17 +59,4 @@ export default {
   flex: 1;
   flex-direction: column;
 }
-.table {
-  padding: 0 10% 0 10%;
-  width: 100%;
-}
-.tableLine {
-  display: flex;
-  flex: 1;
-}
-.tableCase {
-  margin: 50px;
-  display: flex;
-  flex: 1;
-}
 </style>
