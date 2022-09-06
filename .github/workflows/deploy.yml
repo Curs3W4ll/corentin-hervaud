@@ -19,7 +19,7 @@ jobs:
     - name: Switch to my branch
       run: git switch 27_Automatically-setting-up-github-pages-custom-domain
     - name: Install pdf converter
-      run: apt-get install pdftoppm
+      run: sudo apt-get install pdftoppm
     - name: Convert pdf CV to png
       run: pdftoppm cv.pdf public/images/cv.png -png
     - name: Install Node.js
