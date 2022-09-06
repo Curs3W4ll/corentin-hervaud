@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - production
+      - 27_Automatically-setting-up-github-pages-custom-domain
 
 jobs:
   build:
@@ -62,3 +63,13 @@ jobs:
             git add .
             git commit -m "Upload production application on website" --allow-empty
             git push origin gh-pages
+      - name: Test
+        uses: octokit/request-action@v2.x
+        id: test
+        with:
+          route: GET repos/Curs3W4ll/corentin-hervaud/pages/builds
+          owner: Curs3W4ll
+          repo: corentin-hervaud
+          name: "Test"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
