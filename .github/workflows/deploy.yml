@@ -77,4 +77,5 @@ jobs:
           name: "Test"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo Release found: ${{ steps.test.outputs.data }}"
+      - name: Display output
+        run: "echo Release found: ${{ steps.test.outputs.data }}"
