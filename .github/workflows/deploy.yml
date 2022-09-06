@@ -14,8 +14,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Switch to production branch
-      run: git switch production
+    # - name: Switch to production branch
+    #   run: git switch production
+    - name: Switch to my branch
+      run: git switch 27_Automatically-setting-up-github-pages-custom-domain
     - name: Convert pdf CV to png
       run: pdftoppm cv.pdf public/images/cv.png -png
     - name: Install Node.js
