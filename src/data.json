@@ -2,13 +2,13 @@
   "socialLinks": [
     {
       "name": "Github",
-      "description": "Go to my Github profile",
+      "description": "Voir mon profil Github",
       "link": "https://github.com/Curs3W4ll",
       "image": "github.png"
     },
     {
       "name": "LinkedIn",
-      "description": "Go to my LinkedIn profile",
+      "description": "Voir mon profil LinkedIn",
       "link": "https://www.linkedin.com/in/corentin-hervaud",
       "image": "linkedin.png"
     }
@@ -38,19 +38,26 @@
     {
       "name": "MatriLED",
       "description": "MatriLED est une application mobile qui permet de controler un afficheur led directement depuis son téléphone. On peux ainsi y afficher du texte, le faire défiler s'il dépasse la taille de la zone de texte. Il est egalement possible de faire apparaitre des dessins possiblement animes.",
-      "image": "MatriLED.png",
+      "description": "MatriLED est une application mobile qui permet de contrôler un afficheur LED directement depuis son téléphone. On peut ainsi y afficher du texte et le faire défiler.",
+      "image": "matriled/MatriLED.png",
+      "contentFile": "projects/matriled.md",
       "projectLinks": [
         {
           "name": "Gitlab",
           "icon": "Gitlab.png",
           "link": "https://gitlab.com/curs3_w4ll/matriled"
+        },
+        {
+          "name": "Github",
+          "icon": "Github.png",
+          "link": "https://github.com/Curs3W4ll/MatriLED"
         }
       ]
     },
     {
       "name": "Portfolio",
-      "description": "Ce projet est tout simplement le site web sur lequel vous naviguer actuellement. Ce site sert de portfolio afin que les personnes voulant se renseigner sur moi puisse me decouvrir. Il donne acces a mon cv, mes adresses pour me contacter ainsi qu'a une presentation de plusieurs de mes projets.",
-      "contentFile": "test.md",
+      "description": "Ce projet est tout simplement le site web sur lequel vous naviguez actuellement. Ce site sert de portfolio afin que les personnes voulant se renseigner sur moi puisse me découvrir. Il donne accès à mon CV, mes adresses pour me contacter ainsi qu'à une présentation de plusieurs de mes projets.",
+      "contentFile": "projects/portfolio.md",
       "projectLinks": [
         {
           "name": "Github",
@@ -61,12 +68,14 @@
     },
     {
       "name": "Indie Studio",
-      "description": "L'Indie Studio est l'un des projets que j'ai realiser lors de mes annees scolaires. Ce projet est un jeu visant a recreer un bomberman. Par groupe de 6, nous avons realiser un jeu completement fonctionnel representant un bomberman, il est possible de jouer seul contre des intelligences artificielles ou avec ses amis.",
-      "image": "IndieStudio.png"
+      "description": "L'Indie Studio est l'un des projets que j'ai réalisé lors de mes études. Ce projet est un jeu visant à recréer un Bomberman. Par groupe de 6, nous avons réalisé un jeu complètement fonctionnel, il est possible de jouer seul contre des intelligences artificielles ou avec ses amis.",
+      "image": "IndieStudio.png",
+      "contentFile": "projects/indiestudio.md"
     },
     {
       "name": "Hub Website",
-      "description": "Ce project est un site web complet visant a administre une structure nommee HUB dans l'ecole ou j'ai fais mes etudes. Cette structure permet de faire decouvrir aux etudiants de nouvelles technologies ou pratiques par le biais de conferences et d'activites pratiques. Ce site permet ainsi d'organiser de d'administrer ces activites tout en suivant la presences des etudiants."
+      "description": "Ce projet est un site web complet visant à administrer une structure nommée HUB dans l'école où j'ai réalisé mes études. Cette structure permet de faire découvrir aux étudiants de nouvelles technologies ou pratiques par le biais de conférences et d'activités pratiques. Ce site permet ainsi d'organiser et d'administrer ces activités tout en suivant la présence des étudiants.",
+      "contentFile": "projects/hubwebsite.md"
     }
   ]
 }
