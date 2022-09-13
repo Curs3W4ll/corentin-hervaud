@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkportfolio"]=self["webpackChunkportfolio"]||[]).push([[474],{1474:function(n,i,s){s.r(i),i["default"]='# title\n\n`This is litle code`\n\n```\nThis is code in big block\n```\n\n```cpp\nvoid testFunc(int x) {\n    std::cout << "Number is " << x << std::endl;\n}\n```\n\n```javascript\nsnippet\ncoucou "Basic example" a\nCoucou c\'est moi\nendsnippet\n```\n\n[This is a link](https://google.com)\n\n![This is an image](/images/github.png)\n'}}]);
-//# sourceMappingURL=474.3f55ef6a.js.map
