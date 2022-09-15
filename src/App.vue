@@ -28,7 +28,6 @@ export default {
   },
   mounted() {
     this.warningHeight = this.$refs.warningHeader.getHeight();
-    /* console.log(this.warningHeight); */
     this.navContainerKey += 1;
     this.headerHeight = this.$refs.navHeader.getHeight() + this.warningHeight;
     this.contentContainerKey += 1;
