@@ -12,7 +12,7 @@
     </div>
     <div id="pages">
       <router-link :to="{ name: 'cv' }">CV</router-link>
-      <router-link :to="{ name: 'projectsList' }">PROJECTS</router-link>
+      <router-link :to="{ name: 'projectsList' }">PROJETS</router-link>
       <router-link :to="{ name: 'contact' }">CONTACT</router-link>
     </div>
     <span id="navEnd" />

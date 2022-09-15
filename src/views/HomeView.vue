@@ -3,9 +3,9 @@
   <div class="mainContainer">
     <div class="textContainer">
       <p class="mainText">
-        <span class="highViewText">Hello</span>, I'm a student <span class="moreViewText">developper</span> based on Bordeaux, France.
+        <span class="highViewText">Bonjour</span>, Je suis <span class="moreViewText">développeur</span> étudiant  sur Bordeaux.
         <br />
-        Welcome to my <span class="moreViewText">portfolio</span> !
+        Bienvenue sur mon <span class="moreViewText">portfolio</span> !
       </p>
       <p class="title">Corentin<br/>Hervaud<span class="blinker">_</span></p>
     </div>
