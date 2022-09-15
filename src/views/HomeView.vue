@@ -59,12 +59,12 @@ export default {
   cursor: pointer;
 }
 .cvButton {
-  background: #c25ee8;
-  border: 3px solid #8435a2;
-}
-.projectsButton {
   background: #12c9a8;
   border: 3px solid #10836f;
+}
+.projectsButton {
+  background: #c25ee8;
+  border: 3px solid #8435a2;
 }
 .mainText {
   margin: 0;

@@ -18,7 +18,7 @@ jobs:
     - name: Install pdf converter
       run: sudo apt-get install -y poppler-utils
     - name: Convert pdf CV to png
-      run: pdftoppm cv.pdf public/images/cv.png -png
+      run: pdftoppm public/cv.pdf public/images/cv.png -png
     - name: Install Node.js
       uses: actions/setup-node@v3
     - name: Install npm dependencies
