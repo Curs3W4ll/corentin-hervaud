@@ -2,7 +2,7 @@
   <div class="warningContainer" ref="warningHeader">
     <BaseIcon class="warningIcon" id="warningIcon" name="Warning" :size=40><WarningIcon /></BaseIcon>
     <p class="warningText">
-      Ce site web est en développement, il est possible que certaines fonctionnalités ne se comporte pas correctement.
+      Ce site web est en développement, il est possible que certaines fonctionnalités n'est pas le comportement attendu.
     </p>
   </div>
 </template>
