@@ -30,7 +30,6 @@ export default {
 .projectAnchor {
   display: flex;
   position: relative;
-  background: red;
 }
 .projectPreviewImage {
   position: relative;
@@ -47,16 +46,20 @@ export default {
   display: flex;
 }
 .projectPreviewTextContainer {
-  background: #12c9a8dd;
+  background: #12c9a8dd !important;
   flex: 1;
   padding: 20px;
   z-index: 2;
+}
+.projectPreviewTextContainer p,
+.projectPreviewTextContainer h1 {
+  color: #333333;
 }
 .projectPreviewTextContainer p {
   padding-left: 15px;
   font-size: 20px;
 }
 .projectPreviewHighVisibility {
-  background: #c25ee8dd;
+  background: #c25ee8dd !important;
 }
 </style>

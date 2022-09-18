@@ -1,7 +1,7 @@
 <template>
   <AnimatedBackground />
-  <div class="mainContainer">
-    <div class="textContainer">
+  <div class="nobg mainContainer">
+    <div class="nobg textContainer">
       <p class="mainText">
         <span class="highViewText">Bonjour</span>, Je suis <span class="moreViewText">développeur</span> étudiant  sur Bordeaux.
         <br />
@@ -9,12 +9,12 @@
       </p>
       <p class="title">Corentin<br/>Hervaud<span class="blinker">_</span></p>
     </div>
-    <div class="buttonsContainer">
+    <div class="nobg buttonsContainer">
       <router-link :to="{ name: 'cv' }">
-        <button class="cvButton">Consultez mon CV</button>
+        <button class="highViewButton">Consultez mon CV</button>
       </router-link>
       <router-link :to="{ name: 'projectsList' }">
-        <button class="projectsButton">Découvrir mes projets</button>
+        <button class="simpleButton">Découvrir mes projets</button>
       </router-link>
     </div>
   </div>
@@ -49,30 +49,12 @@ export default {
   justify-content: space-around;
   margin-left: 25%;
 }
-.cvButton, .projectsButton {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 10px;
-  font-size: 23px;
-  cursor: pointer;
-}
-.cvButton {
-  background: #12c9a8;
-  border: 3px solid #10836f;
-}
-.projectsButton {
-  background: #c25ee8;
-  border: 3px solid #8435a2;
-}
 .mainText {
   margin: 0;
   padding: 0;
   margin-top: 10%;
   padding-left: 10%;
   font-size: 30px;
-  color: black;
   flex: 1;
 }
 .title {

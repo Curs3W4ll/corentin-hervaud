@@ -1,5 +1,5 @@
 <template>
-  <div class="backgroundContainer">
+  <div class="nobg backgroundContainer">
     <ParticlesBg color="white" type="cobweb" bg=true />
   </div>
 </template>

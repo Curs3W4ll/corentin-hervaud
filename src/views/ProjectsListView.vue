@@ -1,7 +1,7 @@
 <template>
-  <div id="mainProjectsListContainer">
-    <div class="projectsListLine" v-for="line in lines" :key="line.id">
-      <div class="ProjectPreviewContainer" v-for="project in line.projects" :key="project.id" :style="{ flex: project.flex }">
+  <div class="nobg" id="mainProjectsListContainer">
+    <div class="nobg projectsListLine" v-for="line in lines" :key="line.id">
+      <div class="nobg ProjectPreviewContainer" v-for="project in line.projects" :key="project.id" :style="{ flex: project.flex }">
         <ProjectPreview :project="project.project" :highContrast="project.highContrast" />
       </div>
     </div>

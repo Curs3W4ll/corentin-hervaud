@@ -1,8 +1,8 @@
 <template>
-  <div class="projectDetailsMainContainer">
+  <div class="nobg projectDetailsMainContainer">
     <h1>{{ project.name }}</h1>
     <h3 v-if="loading">Loading...</h3>
-    <div v-html="content" />
+    <div class="nobg" v-html="content" />
   </div>
 </template>
 

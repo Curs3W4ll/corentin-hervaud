@@ -1,10 +1,10 @@
 <template>
-  <div id="themeswitch__MainContainer">
+  <div class="nobg" id="themeswitch__MainContainer">
     <label :for="id + '_switch'" :class="{'active': isActive}" class="toggle__button">
-      <div id="themeswitch__SwitchContainer">
+      <div class="nobg" id="themeswitch__SwitchContainer">
         <input type="checkbox" :disabled="disabled" :id="id + '_switch'" v-model="checkedValue">
         <span class="toggle__switch">
-          <div class="toggle__switchContent">
+          <div class="nobg toggle__switchContent">
             <BaseIcon id="leftIcon" name="lightTheme" :size=18 :viewSize=207.628><SunIcon /></BaseIcon>
             <span class="toggle__switchButton" />
             <BaseIcon name="darkTheme" :size=18 :viewSize=455><MoonIcon /></BaseIcon>
@@ -50,6 +50,9 @@ export default {
       this.currentState = Boolean(this.defaultState);
     }
   },
+  emits: [
+    "change",
+  ],
   computed: {
     isActive() {
       return this.currentState;
@@ -97,7 +100,7 @@ export default {
   flex: 1;
   align-self: stretch;
   overflow: hidden;
-  border: 2px solid white;
+  border: 2px solid #ebebebeb;
   border-radius: 20px;
   transition: all .25s;
 }
@@ -108,7 +111,7 @@ export default {
   flex: 1;
   align-items: center;
   left: -24px;
-  fill: white;
+  fill: #ebebebeb !important;
   transform: translateX(0);
   transition: all .25s cubic-bezier(.5, -.6, .5, 1.6);
 }

@@ -1,8 +1,8 @@
 <template>
-  <div class="buttonsContainer">
-    <a class="downloadButton" href="/cv.pdf" download="CV_Corentin-Hervaud.pdf">Cliquez ici pour télécharger</a>
+  <div class="nobg buttonsContainer">
+    <a class="highViewButton" href="/cv.pdf" download="CV_Corentin-Hervaud.pdf">Cliquez ici pour télécharger</a>
   </div>
-  <div class="CVContainer">
+  <div class="nobg CVContainer">
     <img class="CVItem" src="/images/cv.png" alt="CV" />
   </div>
 </template>
@@ -34,16 +34,5 @@ export default {
   margin-top: 25px;
   margin-left: 20%;
   margin-right: 20%;
-}
-.downloadButton {
-  background: #12c9a8;
-  border: 3px solid #10836f;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 10px;
-  font-size: 23px;
-  cursor: pointer;
 }
 </style>

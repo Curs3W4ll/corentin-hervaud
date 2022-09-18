@@ -33,15 +33,14 @@ export default {
 .title {
   margin: 0;
   margin-bottom: 15px;
-  color: #555555;
   font-weight: normal;
+  opacity: 0.6
 }
 .text {
   display: flex;
   flex: none;
   margin: 0;
   padding-left: 20px;
-  color: black;
   font-size: 30px;
 }
 </style>
