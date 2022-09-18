@@ -1,6 +1,6 @@
 <template>
-  <div id="nav" ref="navHeader" :style="`margin-top: ${margin}px`">
-    <div id="logoContainer">
+  <div class="nobg" id="nav" ref="navHeader" :style="`margin-top: ${margin}px`">
+    <div class="nobg" id="logoContainer">
       <span id="logoAround">
         <router-link :to="{ name: 'home' }">
           <BaseIcon name="home" :size=35><HomeIcon /></BaseIcon>
@@ -8,9 +8,9 @@
       </span>
     </div>
     <div id="themeSwitcherContainer">
-      <ThemeSwitcher id="themeSwitcher" />
+      <ThemeSwitcher id="themeSwitcher" @change="switchTheme" />
     </div>
-    <div id="pages">
+    <div class="nobg" id="pages">
       <router-link :to="{ name: 'cv' }">CV</router-link>
       <router-link :to="{ name: 'projectsList' }">PROJETS</router-link>
       <router-link :to="{ name: 'contact' }">CONTACT</router-link>
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import store from "@/store";
+
 import BaseIcon from "@/components/BaseIcon.vue";
 import HomeIcon from "@/components/icons/HomeIcon.vue";
 import ThemeSwitcher from "@/components/ThemeSwitcher.vue";
@@ -33,6 +35,9 @@ export default {
   methods: {
     getHeight() {
       return this.$refs.navHeader.offsetHeight;
+    },
+    switchTheme(value) {
+      store.mutations.setTheme(value ? "dark" : "light");
     },
   },
   props: {
@@ -73,7 +78,7 @@ export default {
   aspect-ratio: 1/1;
 }
 #logoContainer a {
-  fill: white;
+  fill: #ebebeb;
 }
 #logoContainer a.router-link-active {
   fill: #12c9a8;

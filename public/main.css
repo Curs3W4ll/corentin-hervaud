@@ -2,16 +2,61 @@
   width: 0;
 }
 body {
-  background: #eee;
   padding: 0;
   margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
   display: flex;
+}
+#mainDiv {
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+#mainDiv.light {
+  background: #ebebeb;
+}
+#mainDiv.dark {
+  background: #333333;
+}
+.nobg {
+  background: rgba(0, 0, 0, 0) !important;
+}
+.parentContainer.light > * div {
+  background: #ebebeb;
+  fill: #333333;
+}
+.parentContainer.light > * p,
+.parentContainer.light > * a,
+.parentContainer.light > * h1,
+.parentContainer.light > * h2,
+.parentContainer.light > * h3,
+.parentContainer.light > * h4,
+.parentContainer.light > * h5,
+.parentContainer.light > * h6 {
+  color: #333333;
+}
+.parentContainer.dark > * div {
+  background: #333333;
+  fill: #ebebeb;
+}
+.parentContainer.dark > * p,
+.parentContainer.dark > * a,
+.parentContainer.dark > * h1,
+.parentContainer.dark > * h2,
+.parentContainer.dark > * h3,
+.parentContainer.dark > * h4,
+.parentContainer.dark > * h5,
+.parentContainer.dark > * h6 {
+  color: #ebebeb;
 }
 .highViewText,
 .moreViewText {
@@ -23,7 +68,22 @@ body {
 .moreViewText {
   color: #c25ee8;
 }
-a {
-  color: black;
-  text-decoration: none;
+.simpleButton,
+.highViewButton {
+  color: #333333 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  font-size: 23px;
+  cursor: pointer;
+}
+.simpleButton {
+  background: #c25ee8 !important;
+  border: 3px solid #8435a2 !important;
+}
+.highViewButton {
+  background: #12c9a8 !important;
+  border: 3px solid #10836f !important;
 }

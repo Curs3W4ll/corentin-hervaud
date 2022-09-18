@@ -2,7 +2,7 @@
   <div class="warningContainer" ref="warningHeader">
     <BaseIcon class="warningIcon" id="warningIcon" name="Warning" :size=40><WarningIcon /></BaseIcon>
     <p class="warningText">
-      Ce site web est en développement, il est possible que certaines fonctionnalités n'est pas le comportement attendu.
+      Ce site web est en développement, il est possible que certaines fonctionnalités n'aient pas le comportement attendu.
     </p>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
   justify-content: flex-start;
   padding-top: 10px;
   padding-bottom: 10px;
-  fill: black;
+  fill: #333333;
 }
 .warningText {
   padding: 0;
@@ -42,7 +42,7 @@ export default {
   align-self: center;
   font-size: 20px;
   font-weight: bold;
-  color: black;
+  color: #333333;
 }
 .warningIcon {
   padding: 0;
