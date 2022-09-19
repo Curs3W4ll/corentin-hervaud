@@ -45,10 +45,11 @@ export default {
       currentState: this.defaultState,
     };
   },
-  watch: {
-    defaultState: function defaultState() {
-      this.currentState = Boolean(this.defaultState);
-    }
+  created() {
+    console.log("Default state in created is " + this.defaultState);
+  },
+  mounted() {
+    console.log("Default state in mounted is " + this.defaultState);
   },
   emits: [
     "change",

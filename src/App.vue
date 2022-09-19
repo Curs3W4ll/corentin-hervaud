@@ -37,7 +37,7 @@ export default {
   },
   computed: {
     theme() {
-      return store.state.theme;
+      return store.state.useDarkTheme ? "dark" : "light";
     },
   },
 };

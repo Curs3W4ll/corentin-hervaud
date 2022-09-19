@@ -1,28 +1,39 @@
-import { reactive } from 'vue';
+import { reactive } from "vue";
+import Cookies from "js-cookie";
 
 const store = ({
   state: reactive({
-    theme: null,
+    useDarkTheme: null,
   }),
   getters: {
     getTheme() {
-      return store.state.theme;
+      return store.state.useDarkTheme;
     },
   },
   mutations: {
-    setTheme(newTheme) {
-      if (newTheme == "dark") {
-        store.state.theme = "dark";
-      } else if (newTheme == "light") {
-        store.state.theme = "light";
-      } else {
-        store.state.theme = "light";
-      }
+    setTheme(darkTheme) {
+      store.state.useDarkTheme = darkTheme;
+    },
+    saveThemeInCookies(darkTheme) {
+      Cookies.set("useDarkTheme", darkTheme);
+    },
+    changeTheme(darkTheme) {
+      console.log("Change theme to " + darkTheme + "(" + typeof(darkTheme) + ")");
+      store.mutations.setTheme(darkTheme);
+      store.mutations.saveThemeInCookies(darkTheme);
     },
   },
   actions: {
-    initializeTheme(theme = "light") {
-      store.state.theme = theme;
+    initializeTheme(darkTheme = false) {
+      const cookie = Cookies.get("useDarkTheme");
+
+      console.log("Cookie: " + cookie + "(" + typeof(cookie) + ")");
+      if (cookie) {
+        store.state.useDarkTheme = cookie === "true";
+      } else {
+        store.state.useDarkTheme = darkTheme;
+      }
+      console.log("Theme initialized to " + store.state.useDarkTheme + "(" + typeof(store.state.useDarkTheme) + ")");
     },
   },
 })
