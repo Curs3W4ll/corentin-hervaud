@@ -8,7 +8,7 @@
       </span>
     </div>
     <div id="themeSwitcherContainer">
-      <ThemeSwitcher id="themeSwitcher" @change="switchTheme" />
+      <ThemeSwitcher id="themeSwitcher" @change="switchTheme" :defaultState="theme" />
     </div>
     <div class="nobg" id="pages">
       <router-link :to="{ name: 'cv' }">CV</router-link>
@@ -37,7 +37,13 @@ export default {
       return this.$refs.navHeader.offsetHeight;
     },
     switchTheme(value) {
-      store.mutations.setTheme(value ? "dark" : "light");
+      store.mutations.changeTheme(value);
+    },
+  },
+  computed: {
+    theme() {
+      console.log("Getted theme is " + store.getters.getTheme() + "(" + Boolean(store.getters.getTheme()) + ")");
+      return Boolean(store.getters.getTheme());
     },
   },
   props: {
