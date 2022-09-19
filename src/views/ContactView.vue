@@ -1,7 +1,7 @@
 <template>
   <AnimatedBackground />
-  <div id="mainContactsContainer">
-    <div class="contactColumn" v-for="column in columns" :key="column.id">
+  <div class="nobg" id="mainContactsContainer">
+    <div class="nobg contactColumn" v-for="column in columns" :key="column.id">
       <ContactItem class="contactItem" v-for="item in column.items" :key="item.id" :title="item.name" :value="item.value" :link="item.link" />
     </div>
   </div>

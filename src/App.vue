@@ -1,13 +1,16 @@
 <template>
-  <WarningHeader class="topping" ref="warningHeader" />
-  <TheNavigation class="topping" :margin="warningHeight" ref="navHeader" :key="navContainerKey" />
-  <TheSocialLinks class="topping" />
-  <div class="contentContainer" :style="`margin-top: ${headerHeight}px;`" :key="contentContainerKey">
+  <div id="mainDiv" :class="theme" />
+  <WarningHeader class="parentContainer topping" :class="theme" ref="warningHeader" />
+  <TheNavigation class="parentContainer topping" :class="theme" :margin="warningHeight" ref="navHeader" :key="navContainerKey" />
+  <TheSocialLinks class="parentContainer topping" :class="theme" />
+  <div class="parentContainer contentContainer" :class="theme" :style="`margin-top: ${headerHeight}px;`" :key="contentContainerKey">
     <router-view />
   </div>
 </template>
 
 <script>
+import store from "@/store";
+
 import TheNavigation from "@/components/TheNavigation.vue";
 import TheSocialLinks from "@/components/TheSocialLinks.vue";
 import WarningHeader from "@/components/WarningHeader.vue";
@@ -28,10 +31,14 @@ export default {
   },
   mounted() {
     this.warningHeight = this.$refs.warningHeader.getHeight();
-    /* console.log(this.warningHeight); */
     this.navContainerKey += 1;
     this.headerHeight = this.$refs.navHeader.getHeight() + this.warningHeight;
     this.contentContainerKey += 1;
+  },
+  computed: {
+    theme() {
+      return store.state.useDarkTheme ? "dark" : "light";
+    },
   },
 };
 </script>

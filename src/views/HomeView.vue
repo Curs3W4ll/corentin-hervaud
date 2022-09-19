@@ -1,12 +1,22 @@
 <template>
   <AnimatedBackground />
-  <div class="mainContainer">
-    <p class="mainText">
-      <span class="highViewText">Hello</span>, I'm a student <span class="moreViewText">developper</span> based on Bordeaux, France.
-      <br />
-      Welcome to my <span class="moreViewText">portfolio</span> !
-    </p>
-    <p class="title">Corentin<br/>Hervaud<span class="blinker">_</span></p>
+  <div class="nobg mainContainer">
+    <div class="nobg textContainer">
+      <p class="mainText">
+        <span class="highViewText">Bonjour</span>, Je suis <span class="moreViewText">développeur</span> étudiant  sur Bordeaux.
+        <br />
+        Bienvenue sur mon <span class="moreViewText">portfolio</span> !
+      </p>
+      <p class="title">Corentin<br/>Hervaud<span class="blinker">_</span></p>
+    </div>
+    <div class="nobg buttonsContainer">
+      <router-link :to="{ name: 'cv' }">
+        <button class="highViewButton">Consultez mon CV</button>
+      </router-link>
+      <router-link :to="{ name: 'projectsList' }">
+        <button class="simpleButton">Découvrir mes projets</button>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -25,7 +35,19 @@ export default {
   height: 100%;
   display: flex;
   flex: 1;
+  flex-direction: column;
+}
+.textContainer {
+  flex: 3;
+  display: flex;
   justify-content: space-around;
+}
+.buttonsContainer {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-left: 25%;
 }
 .mainText {
   margin: 0;
@@ -33,7 +55,6 @@ export default {
   margin-top: 10%;
   padding-left: 10%;
   font-size: 30px;
-  color: black;
   flex: 1;
 }
 .title {
